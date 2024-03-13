@@ -6,7 +6,7 @@ int main()
     int nst=1;
     int ml = 7/2+1;
     printf("Welcome to the Pattern Printing Game!\n");
-    printf("Enter your choice of pattern you want to print(1 for Triangle)(2 for Pyramid)(3 for Diamond): ");
+    printf("Enter your choice of pattern you want to print:\n1 for Triangle\n2 for Pyramid\n3 for Diamond \n");
     scanf("%d",&choice);
 
     switch (choice)
