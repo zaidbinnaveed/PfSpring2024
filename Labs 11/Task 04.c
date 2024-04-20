@@ -3,7 +3,7 @@
 int main()
 {
     int result;
-    char storedpassword[50]="zazoo2004";
+    char storedpassword[50]="secure123";
     char enterpassword[50];
     printf("Enter password:\n");
     fgets(enterpassword,sizeof(enterpassword),stdin);
@@ -15,15 +15,17 @@ int main()
     {
         printf("Password entered is too short! Try again!\n");
     }
-    result=strcmp( enterpassword, storedpassword);
+    else
+    {result=strcmp( enterpassword, storedpassword);
     if (result==0)
     {
-        printf("Correct password entered! Welcome!\n");
+        printf("Login Successful. Welcome!\n");
     }
     else
     {
-        printf("Incorrect password entered! Try again!\n");
+        printf("Login Failed! Incorrect password.\n");
 
+    }
     }
     return 0;
 }
